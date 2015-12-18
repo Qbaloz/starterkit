@@ -1,4 +1,5 @@
 # starterkit
 starterkit repo
 
-https://travis-ci.org/ldrygala/starterkit.svg
+![Travis-CI](https://travis-ci.org/ldrygala/starterkit.svg)
+
