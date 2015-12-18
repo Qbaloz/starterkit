@@ -3,5 +3,7 @@
  */
 public class MathematicalOperations {
 
-
+	public static int Summation(int num1, int num2) {
+		return num1+num2;
+	}
 }
