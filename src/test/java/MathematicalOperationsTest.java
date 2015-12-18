@@ -7,12 +7,12 @@ import org.junit.Test;
  */
 public class MathematicalOperationsTest {
 	@Test
-	public void shouldHandleSummation() {
+	public void shouldHandleAddingTwoNumbers() {
 		//given
 		int numberOne = 3;
 		int numberTwo = 5;
 		//when
-		int result = MathematicalOperations.Summation(numberOne, numberTwo);
+		int result = MathematicalOperations.addTwoNumbers(numberOne, numberTwo);
 		//then
 		Assert.assertEquals(8, result);
 	}
