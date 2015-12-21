@@ -30,8 +30,6 @@ public class MathematicalOperationsTest {
 	public void shouldReturnFactorialOfZero() {
 		// given
 		int factorialBase = 0;
-		Shopping shop = new Shopping();
-		shop.addGrocery("Meal");
 		// when
 		BigInteger result = MathematicalOperations.factorial(factorialBase);
 		// then
