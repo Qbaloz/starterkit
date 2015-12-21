@@ -92,4 +92,54 @@ public class MathematicalOperationsTest {
 		// then
 		Assert.assertEquals(0, result);
 	}
+	
+	@Test
+	public void shouldHandlePositiveEvenNumber(){
+		//given
+		int inputNumber = 4;
+		//when
+		boolean result = MathematicalOperations.isEven(inputNumber);
+		//then
+		Assert.assertTrue(result);
+	}
+	
+	@Test
+	public void shouldHandlePositiveOddNumber(){
+		//given
+		int inputNumber = 3;
+		//when
+		boolean result = MathematicalOperations.isEven(inputNumber);
+		//then
+		Assert.assertFalse(result);
+	}
+	
+	@Test
+	public void shouldHandleZero(){
+		//given
+		int inputNumber = 0;
+		//when
+		boolean result = MathematicalOperations.isEven(inputNumber);
+		//then
+		Assert.assertTrue(result);
+	}
+	
+	@Test
+	public void shouldHandleNegativeEvenNumber(){
+		//given
+		int inputNumber = -4;
+		//when
+		boolean result = MathematicalOperations.isEven(inputNumber);
+		//then
+		Assert.assertTrue(result);
+	}
+	
+	@Test
+	public void shouldHandleNegativeOddNumber(){
+		//given
+		int inputNumber = -3;
+		//when
+		boolean result = MathematicalOperations.isEven(inputNumber);
+		//then
+		Assert.assertFalse(result);
+	}
 }

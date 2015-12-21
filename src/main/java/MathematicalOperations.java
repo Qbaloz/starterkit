@@ -20,4 +20,8 @@ public class MathematicalOperations {
 		return factorial(positiveInteger - 1)
 				.multiply(BigInteger.valueOf((long) positiveInteger));
 	}
+	
+	public static boolean isEven(int number){
+		return number%2 ==0;
+	}
 }
