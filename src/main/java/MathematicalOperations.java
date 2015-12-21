@@ -20,4 +20,8 @@ public class MathematicalOperations {
 		return factorial(positiveInteger - 1)
 				.multiply(BigInteger.valueOf((long) positiveInteger));
 	}
+	
+	public static int multiplyTwoNumbers(int firstNumber, int secondNumber){
+		return firstNumber*secondNumber;
+	}
 }
