@@ -1,11 +1,10 @@
+import java.io.FileReader;
 import java.math.BigDecimal;
 import java.math.BigInteger;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.text.DecimalFormat;
 import java.text.DecimalFormatSymbols;
 import java.util.Locale;
+import java.util.Scanner;
 
 import org.junit.Assert;
 import org.junit.Assume;
@@ -68,11 +67,17 @@ public class MathematicalOperationsTest {
 		// given
 		// source http://www.nitrxgen.net/factorialdb/
 		Assume.assumeNotNull(getClass().getResource("10000factorial.txt"));
+		String filePath = getClass().getResource("10000factorial.txt").getPath();
+		Scanner in = new Scanner(new FileReader(filePath));
+		String bigNumber = "";
+		if (in.hasNext()) {
+			bigNumber = in.nextLine();
+		}
+		in.close();
+		Assume.assumeFalse(bigNumber == "");
 		int factorialBase = 10000;
 		// when
 		BigInteger result = MathematicalOperations.factorial(factorialBase);
-		Path testFile = Paths.get(getClass().getResource("10000factorial.txt").toURI());
-		String bigNumber = Files.lines(testFile).findFirst().orElse("");
 		// then
 		BigInteger expectedResult = new BigInteger(bigNumber);
 		Assert.assertEquals(expectedResult, result);
