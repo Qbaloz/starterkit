@@ -44,7 +44,7 @@ public class MathematicalOperationsTest {
 		// when
 		BigInteger result = MathematicalOperations.factorial(factorialBase);
 		// then
-		BigInteger expectedResult = BigInteger.valueOf(3_628_800);
+		BigInteger expectedResult = BigInteger.valueOf(3628800);
 		Assert.assertEquals(expectedResult, result);
 	}
 
