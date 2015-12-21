@@ -68,7 +68,7 @@ public class MathematicalOperationsTest {
 		// given
 		// source http://www.nitrxgen.net/factorialdb/
 		Assume.assumeNotNull(getClass().getResource("10000factorial.txt"));
-		int factorialBase = 10_000;
+		int factorialBase = 10000;
 		// when
 		BigInteger result = MathematicalOperations.factorial(factorialBase);
 		Path testFile = Paths.get(getClass().getResource("10000factorial.txt").toURI());
