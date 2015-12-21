@@ -1,9 +1,23 @@
+import java.math.BigInteger;
+
 /**
  * Created by ldrygala on 2015-11-20.
  */
 public class MathematicalOperations {
 
 	public static int addTwoNumbers(int num1, int num2) {
-		return num1+num2;
+		return num1 + num2;
+	}
+
+	public static BigInteger factorial(int positiveInteger) {
+		if (positiveInteger < 0) {
+			throw new IllegalArgumentException("Input integer has to be positive!");
+		}
+		if (positiveInteger <= 1) {
+			return BigInteger.ONE;
+		}
+
+		return factorial(positiveInteger - 1)
+				.multiply(BigInteger.valueOf((long) positiveInteger));
 	}
 }
