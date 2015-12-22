@@ -142,4 +142,14 @@ public class MathematicalOperationsTest {
 		//then
 		Assert.assertFalse(result);
 	}
+	
+	public void shouldHandleMultiplyTwoNumbers() {
+		//given
+		int firstNumber = 9;
+		int secondNumber = 5;
+		//when
+		int result = MathematicalOperations.multiplyTwoNumbers(firstNumber, secondNumber);
+		//then
+		Assert.assertEquals(45, result);
+	}
 }
