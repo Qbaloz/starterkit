@@ -102,6 +102,16 @@ public class MathematicalOperationsTest {
 		int result = MathematicalOperations.multiplyTwoNumbers(firstNumber, secondNumber);
 		//then
 		Assert.assertEquals(45, result);
-		
+	}
+	
+	@Test
+	public void shouldHandleEuclidean(){
+		//given
+		int firstNumber = 6;
+		int secondNumber = 12;
+		//when
+		int result = MathematicalOperations.euclidean(firstNumber, secondNumber);
+		//then
+		Assert.assertEquals(6, result);
 	}
 }
