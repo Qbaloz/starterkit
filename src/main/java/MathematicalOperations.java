@@ -21,7 +21,13 @@ public class MathematicalOperations {
 				.multiply(BigInteger.valueOf((long) positiveInteger));
 	}
 	
+
+	public static boolean isEven(int number){
+		return number%2 ==0;
+	}
+
 	public static int multiplyTwoNumbers(int firstNumber, int secondNumber){
 		return firstNumber*secondNumber;
+
 	}
 }
