@@ -94,6 +94,55 @@ public class MathematicalOperationsTest {
 	}
 	
 	@Test
+	public void shouldHandlePositiveEvenNumber(){
+		//given
+		int inputNumber = 4;
+		//when
+		boolean result = MathematicalOperations.isEven(inputNumber);
+		//then
+		Assert.assertTrue(result);
+	}
+	
+	@Test
+	public void shouldHandlePositiveOddNumber(){
+		//given
+		int inputNumber = 3;
+		//when
+		boolean result = MathematicalOperations.isEven(inputNumber);
+		//then
+		Assert.assertFalse(result);
+	}
+	
+	@Test
+	public void shouldHandleZero(){
+		//given
+		int inputNumber = 0;
+		//when
+		boolean result = MathematicalOperations.isEven(inputNumber);
+		//then
+		Assert.assertTrue(result);
+	}
+	
+	@Test
+	public void shouldHandleNegativeEvenNumber(){
+		//given
+		int inputNumber = -4;
+		//when
+		boolean result = MathematicalOperations.isEven(inputNumber);
+		//then
+		Assert.assertTrue(result);
+	}
+	
+	@Test
+	public void shouldHandleNegativeOddNumber(){
+		//given
+		int inputNumber = -3;
+		//when
+		boolean result = MathematicalOperations.isEven(inputNumber);
+		//then
+		Assert.assertFalse(result);
+	}
+	
 	public void shouldHandleMultiplyTwoNumbers() {
 		//given
 		int firstNumber = 9;
@@ -101,6 +150,7 @@ public class MathematicalOperationsTest {
 		//when
 		int result = MathematicalOperations.multiplyTwoNumbers(firstNumber, secondNumber);
 		//then
+<<<<<<< HEAD
 		Assert.assertEquals(45, result);
 	}
 	
@@ -113,5 +163,8 @@ public class MathematicalOperationsTest {
 		int result = MathematicalOperations.euclidean(firstNumber, secondNumber);
 		//then
 		Assert.assertEquals(6, result);
+=======
+		Assert.assertEquals(45, result);
+>>>>>>> 70865846b896b58198f49c1fa80241e62122eaf8
 	}
 }
