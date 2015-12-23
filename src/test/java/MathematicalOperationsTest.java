@@ -164,4 +164,14 @@ public class MathematicalOperationsTest {
 		// then
 		Assert.assertEquals(6, result);
 	}
+	@Test
+	public void shouldHandleSubstractingTwoNumbers() {
+		// given
+		int numberOne = 7;
+		int numberTwo = 5;
+		// when
+		int result = MathematicalOperations.substractTwoNumbers(numberOne, numberTwo);
+		// then
+		Assert.assertEquals(2, result);
+	}
 }

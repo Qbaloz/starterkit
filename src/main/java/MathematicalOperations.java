@@ -43,4 +43,8 @@ public class MathematicalOperations {
 		}
 		return first;
 	}
+
+		public static int substractTwoNumbers(int numb1, int numb2) {
+			return numb1 - numb2;
+		}
 }
