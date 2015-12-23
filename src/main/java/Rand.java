@@ -2,7 +2,7 @@ import org.apache.commons.lang3.RandomStringUtils;
 
 public class Rand {
 
-	public static String genRandomStrings()
+	public static String genRandomString()
 	{
 		return RandomStringUtils.random(5);
 	}

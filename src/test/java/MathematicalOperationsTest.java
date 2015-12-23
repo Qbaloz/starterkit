@@ -92,7 +92,6 @@ public class MathematicalOperationsTest {
 		// then
 		Assert.assertEquals(0, result);
 	}
-<<<<<<< HEAD
 	
 	@Test
 	public void shouldHandlePositiveEvenNumber(){
@@ -124,86 +123,15 @@ public class MathematicalOperationsTest {
 		Assert.assertTrue(result);
 	}
 	
-	@Test
-	public void shouldHandleNegativeEvenNumber(){
-		//given
-		int inputNumber = -4;
-		//when
-		boolean result = MathematicalOperations.isEven(inputNumber);
-		//then
-		Assert.assertTrue(result);
-	}
 	
-	@Test
-	public void shouldHandleNegativeOddNumber(){
-		//given
-		int inputNumber = -3;
-		//when
-		boolean result = MathematicalOperations.isEven(inputNumber);
-		//then
-		Assert.assertFalse(result);
-	}
-	
-=======
 
-	@Test
-	public void shouldHandlePositiveEvenNumber() {
-		// given
-		int inputNumber = 4;
-		// when
-		boolean result = MathematicalOperations.isEven(inputNumber);
-		// then
-		Assert.assertTrue(result);
-	}
-
-	@Test
-	public void shouldHandlePositiveOddNumber() {
-		// given
-		int inputNumber = 3;
-		// when
-		boolean result = MathematicalOperations.isEven(inputNumber);
-		// then
-		Assert.assertFalse(result);
-	}
-
-	@Test
-	public void shouldHandleZero() {
-		// given
-		int inputNumber = 0;
-		// when
-		boolean result = MathematicalOperations.isEven(inputNumber);
-		// then
-		Assert.assertTrue(result);
-	}
-
-	@Test
-	public void shouldHandleNegativeEvenNumber() {
-		// given
-		int inputNumber = -4;
-		// when
-		boolean result = MathematicalOperations.isEven(inputNumber);
-		// then
-		Assert.assertTrue(result);
-	}
-
-	@Test
-	public void shouldHandleNegativeOddNumber() {
-		// given
-		int inputNumber = -3;
-		// when
-		boolean result = MathematicalOperations.isEven(inputNumber);
-		// then
-		Assert.assertFalse(result);
-	}
-
->>>>>>> upstream/master
 	public void shouldHandleMultiplyTwoNumbers() {
 		// given
 		int firstNumber = 9;
 		int secondNumber = 5;
 		// when
 		int result = MathematicalOperations.multiplyTwoNumbers(firstNumber, secondNumber);
-<<<<<<< HEAD
+
 		//then
 		Assert.assertEquals(45, result);
 	}
@@ -227,10 +155,9 @@ public class MathematicalOperationsTest {
 		int result = MathematicalOperations.exponentiate(number, power);
 		//then
 		Assert.assertEquals(1, result);
-=======
 		// then
 
-		Assert.assertEquals(45, result);
+		Assert.assertEquals(1, result);
 	}
 
 	@Test
@@ -242,7 +169,6 @@ public class MathematicalOperationsTest {
 		int result = MathematicalOperations.euclidean(firstNumber, secondNumber);
 		// then
 		Assert.assertEquals(6, result);
->>>>>>> upstream/master
 	}
 	
 	
