@@ -30,4 +30,17 @@ public class MathematicalOperations {
 		return firstNumber*secondNumber;
 
 	}
+	
+	public static int euclidean(int first, int second){
+		if(first<=0||second<=0){
+			throw new IllegalStateException();
+		}
+		int third;
+		while(second!=0){
+			third = first%second;
+			first = second;
+			second = third;
+		}
+		return first;
+	}
 }

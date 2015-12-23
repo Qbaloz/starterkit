@@ -92,64 +92,76 @@ public class MathematicalOperationsTest {
 		// then
 		Assert.assertEquals(0, result);
 	}
-	
+
 	@Test
-	public void shouldHandlePositiveEvenNumber(){
-		//given
+	public void shouldHandlePositiveEvenNumber() {
+		// given
 		int inputNumber = 4;
-		//when
+		// when
 		boolean result = MathematicalOperations.isEven(inputNumber);
-		//then
+		// then
 		Assert.assertTrue(result);
 	}
-	
+
 	@Test
-	public void shouldHandlePositiveOddNumber(){
-		//given
+	public void shouldHandlePositiveOddNumber() {
+		// given
 		int inputNumber = 3;
-		//when
+		// when
 		boolean result = MathematicalOperations.isEven(inputNumber);
-		//then
+		// then
 		Assert.assertFalse(result);
 	}
-	
+
 	@Test
-	public void shouldHandleZero(){
-		//given
+	public void shouldHandleZero() {
+		// given
 		int inputNumber = 0;
-		//when
+		// when
 		boolean result = MathematicalOperations.isEven(inputNumber);
-		//then
+		// then
 		Assert.assertTrue(result);
 	}
-	
+
 	@Test
-	public void shouldHandleNegativeEvenNumber(){
-		//given
+	public void shouldHandleNegativeEvenNumber() {
+		// given
 		int inputNumber = -4;
-		//when
+		// when
 		boolean result = MathematicalOperations.isEven(inputNumber);
-		//then
+		// then
 		Assert.assertTrue(result);
 	}
-	
+
 	@Test
-	public void shouldHandleNegativeOddNumber(){
-		//given
+	public void shouldHandleNegativeOddNumber() {
+		// given
 		int inputNumber = -3;
-		//when
+		// when
 		boolean result = MathematicalOperations.isEven(inputNumber);
-		//then
+		// then
 		Assert.assertFalse(result);
 	}
-	
+
 	public void shouldHandleMultiplyTwoNumbers() {
-		//given
+		// given
 		int firstNumber = 9;
 		int secondNumber = 5;
-		//when
+		// when
 		int result = MathematicalOperations.multiplyTwoNumbers(firstNumber, secondNumber);
-		//then
+		// then
+
 		Assert.assertEquals(45, result);
+	}
+
+	@Test
+	public void shouldHandleEuclidean() {
+		// given
+		int firstNumber = 6;
+		int secondNumber = 12;
+		// when
+		int result = MathematicalOperations.euclidean(firstNumber, secondNumber);
+		// then
+		Assert.assertEquals(6, result);
 	}
 }
