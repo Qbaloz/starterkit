@@ -17,34 +17,39 @@ public class MathematicalOperations {
 			return BigInteger.ONE;
 		}
 
-		return factorial(positiveInteger - 1)
-				.multiply(BigInteger.valueOf((long) positiveInteger));
-	}
-	
-
-	public static boolean isEven(int number){
-		return number%2 ==0;
+		return factorial(positiveInteger - 1).multiply(BigInteger.valueOf(positiveInteger));
 	}
 
-	public static int multiplyTwoNumbers(int firstNumber, int secondNumber){
-		return firstNumber*secondNumber;
+	public static boolean isEven(int number) {
+		return number % 2 == 0;
+	}
+
+	public static int multiplyTwoNumbers(int firstNumber, int secondNumber) {
+		return firstNumber * secondNumber;
 
 	}
-	
-	public static int euclidean(int first, int second){
-		if(first<=0||second<=0){
+
+	public static int euclidean(int first, int second) {
+		if (first <= 0 || second <= 0) {
 			throw new IllegalStateException();
 		}
 		int third;
-		while(second!=0){
-			third = first%second;
+		while (second != 0) {
+			third = first % second;
 			first = second;
 			second = third;
 		}
 		return first;
 	}
 
-		public static int substractTwoNumbers(int numb1, int numb2) {
-			return numb1 - numb2;
-		}
+	public static int substractTwoNumbers(int numb1, int numb2) {
+		return numb1 - numb2;
+	}
+
+	public static int exponentiate(int number, int power) {
+		int result = 1;
+		for (int i = 1; i <= power; i++)
+			result *= number;
+		return result;
+	}
 }

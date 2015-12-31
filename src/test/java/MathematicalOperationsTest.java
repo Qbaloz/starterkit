@@ -164,6 +164,7 @@ public class MathematicalOperationsTest {
 		// then
 		Assert.assertEquals(6, result);
 	}
+
 	@Test
 	public void shouldHandleSubstractingTwoNumbers() {
 		// given
@@ -173,5 +174,27 @@ public class MathematicalOperationsTest {
 		int result = MathematicalOperations.substractTwoNumbers(numberOne, numberTwo);
 		// then
 		Assert.assertEquals(2, result);
+	}
+
+	@Test
+	public void shouldHandleExpTwoNumbers() {
+		// given
+		int number = 2;
+		int power = 10;
+		// when
+		int result = MathematicalOperations.exponentiate(number, power);
+		// then
+		Assert.assertEquals(1024, result);
+	}
+
+	@Test
+	public void shouldHandleExpToThePowerOfZero() {
+		// given
+		int number = 543;
+		int power = 0;
+		// when
+		int result = MathematicalOperations.exponentiate(number, power);
+		// then
+		Assert.assertEquals(1, result);
 	}
 }
